@@ -61,7 +61,7 @@ Registrar Cartas Reales:
 Registrar Cartas Personalizadas:
 ![image](https://github.com/user-attachments/assets/ba8a9883-ec96-4477-8e68-18064518fb16)
 ![image](https://github.com/user-attachments/assets/e7f646ce-37bb-4a9c-b8b2-77358d9ac571)
-Las Cartas Personalizadas son únicas para el Usuario que las crea. No se comparten ni podrán ser utilizadas para el combate. Son todo para la colección personal del Usuario.
+Las Cartas Personalizadas son únicas para el Usuario que las crea. No se comparten ni podrán ser utilizadas para el combate. Existen sodo para la colección personal del Usuario.
 
 
 Mis Cartas:
