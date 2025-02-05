@@ -1,0 +1,567 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-bottom: 150px;
+}
+
+/* Agregamos el pseudo-elemento para la imagen de fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/pattern3.jpg'); /* La imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda el área */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen no se moverá al hacer scroll */
+    opacity: 0.05; /* Ajusta la opacidad aquí */
+    z-index: -1; /* Asegura que la imagen de fondo quede detrás del contenido */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #f33949;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bienvenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.bienvenido img.header-img {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+header h2 {
+    color: white;
+    margin-top: 1%;
+}
+
+
+
+/* INICIO */
+.div-index {
+    width: 60%;
+    max-width: 900px;
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.div-index h1, h2, p{
+    margin: 30px;
+}
+
+.div-index img {
+    width: 100%;
+}
+
+div.intro2 {
+    display: flex; /* Usar Flexbox para alinear horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    box-sizing: border-box; /* Incluir padding en el tamaño total */
+    margin-bottom: 40px;
+}
+
+div.intro2 form {
+    flex-grow: 1; /* Hacer que el formulario ocupe el espacio restante */
+    display: flex; /* Usar Flexbox para posicionar el div del botón */
+    justify-content: center; /* Centrar el div del botón horizontalmente */
+    align-items: left; /* Centrar el div del botón verticalmente */
+}
+
+.div-boton {
+    text-align: center;
+}
+
+div.div-boton button {
+    width: 80%;
+    height: 20%; /* Alto fijo del botón */
+    height: auto; /* Mantener proporciones */
+    padding: 10px 20px; /* Tamaño del botón */
+    font-size: 2rem; /* Tamaño del texto */
+    background-color: #f33939; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor a "mano" */
+}
+
+.div-boton button:hover {
+    background-color: #232a95;
+}
+
+div.intro2 img {
+    max-width: 40%; /* Limitar la anchura de la imagen al 40% del contenedor */
+    height: auto; /* Mantener proporciones */
+}
+
+
+/* Estilos del formulario de inicio */
+.inicio {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inicio h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.inicio label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.inicio textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} 
+
+.inicio input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inicio input:focus {
+    outline: none;
+    border-color: #f33939;
+}
+
+.inicio button {
+    width: 100%;
+    padding: 10px;
+    background-color: #343434;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.inicio button:hover {
+    background-color: #f33939;
+}
+
+/* Estilos del formulario de registro */
+.registrar {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.registrar h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.registrar label {
+    display: block;
+    color: #333;
+}
+
+.registrar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registrar input:focus {
+    outline: none;
+    border-color: #f33939;
+}
+
+.registrar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #343434;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.registrar button:hover {
+    background-color: #f33939;
+}
+
+/* Estilos del formulario de Insertar Pokémon */
+.pokemon-register {
+    background-color: #fff;
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemon-register h2 {
+    margin-bottom: 20px;
+}
+
+.pokemon-register label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.pokemon-register input, .pokemon-register select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pokemon-register textarea {
+    width: 100%;
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} 
+
+/* .pokemon-register input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} */
+
+.pokemon-register input:focus, .pokemon-register select:focus, .pokemon-register textarea:focus {
+    outline: none;
+    border-color: #f33939;
+}
+
+.pokemon-register button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 2%;
+    background-color: #343434;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pokemon-register button:hover {
+    background-color: #f33939;
+}
+
+
+
+/* MIS CARTAS */
+.div-tablas {
+    width: 95%;
+    margin-top: 3%;
+    background-color: #fff;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.div-tablas h1 {
+    margin-bottom: 3%;
+}
+
+.lista {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.lista h2 {
+    text-align: left;
+    margin-left: 5.1%;
+}
+
+.lista p {
+    text-align: left;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: separate; /* Usamos "separate" en lugar de "collapse" */
+    border-spacing: 0; /* Asegura que no haya espacio extra entre celdas */
+    border-radius: 10px; /* Bordes redondeados de la tabla */
+    overflow: hidden; /* Es necesario si usas "separate" */
+    border: 3px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #232a95;
+    color: white;
+    border-top: none; /* Elimina bordes superfluos en las esquinas superiores */
+    border-top: top; /* Elimina bordes superfluos en las esquinas superiores */
+}
+
+th:first-child {
+    border-left: none; /* Elimina el borde izquierdo de la primera columna */
+}
+
+th:last-child {
+    border-right: none; /* Elimina el borde derecho de la última columna */
+}
+
+td:first-child {
+    border-left: none; /* Elimina el borde izquierdo de la primera columna */
+}
+
+td:last-child {
+    border-right: none; /* Elimina el borde derecho de la última columna */
+}
+
+td img {
+    width: 100px;
+    height: auto; /* Para mantener la proporción de la imagen */
+}
+
+.image-colum {
+    width: 100px;
+}
+
+.name-colum {
+    width: 200px;
+}
+
+.delete-colum {
+    width: 90px;
+}
+
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.delete-btn {
+    background-color: #f33939;
+    color: white;
+}
+
+.p-tabla {
+    text-align: left;
+    margin-left: 5.1%;
+}
+
+
+
+
+
+
+
+/* MI PERFIL */
+
+.perfil-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.perfil-container h2 {
+    margin: 0;
+}
+
+.perfil-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+}
+
+.perfil-container h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.perfil-container p {
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #efefef;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.perfil-button button {
+    margin-top: 30px;
+    width: 40%;
+    padding: 10px;
+    background-color: #343434;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.perfil-button button:hover {
+    background-color: #f33939;
+}
+
+
+
+
+
+
+
+
+/* Estilo del botón de Back */
+.back button {
+    padding: 10px;
+    background-color: #232a95;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back button:hover {
+    background-color: #f33939;
+}
+
+/* Estilos del footer */
+/* Estilos del footer */
+footer {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Coloca el botón a la derecha y el texto centrado */
+    padding: 10px 20px; /* Espaciado dentro del footer */
+    background-color: #343434;; /* Fondo del footer */
+    color: white; /* Color del texto */
+    position: fixed; /* Mantén el footer fijo al final de la página */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Elimina los márgenes del párrafo */
+    margin-left: 270px;
+    text-align: left; /* Asegura que el texto esté centrado dentro de su espacio */
+    flex-grow: 2; /* Permite que el párrafo ocupe el espacio disponible */
+}
+
+footer form {
+    margin: 0; /* Elimina márgenes adicionales */
+    flex-grow: 1
+}
+
+footer button {
+    background-color: black; /* Color del botón */
+    color: #ffcc00; /* Color del texto del botón */
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ffcc00; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano para el botón */
+}
+
+footer button:hover {
+    background-color: #222222; /* Cambia el color al pasar el ratón */
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .bienvenido img.header-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+}
