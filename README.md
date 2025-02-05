@@ -1,7 +1,7 @@
 Pokémon PDP
 
-Pokémon PDP es un proyecto del curso de aprendizaje de PHP que trata de una versión web del juego de cartas de Pokémon. 
-Tiene su página principal, su sistema de registro y login de usuarios, sistema de perfiles de usuarios con capacidad de editar datos y foto de perfil del usuario, sistema de colección, apretura y registro de cartas Pokémon. Aún no se ha implementado el PvP, PvE ni PvC (pronto).
+Pokémon PDP es un proyecto del curso de aprendizaje de PHP que trata de una versión web del juego de cartas de Pokémon. El objetivo del proyecto es implementar PHP con una base de datos, cookies y sesiones.
+Pokémon PHP tiene su página principal, su sistema de registro y login de usuarios, sistema de perfiles de usuarios con capacidad de editar datos y foto de perfil del usuario, sistema de colección, apretura y registro de cartas Pokémon. Aún no se ha implementado el PvP, PvE ni PvC (PvP local en desarrollo).
 Se ha utilizado una base de datos con phpMyAdmin. Se han utilizado cookies y sesiones.
 
 Tecología utilizada:
